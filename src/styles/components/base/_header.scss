@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    line-height: 4.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    
+    .item {
+        color: white;
+        text-decoration: none;
+    }
+
+}

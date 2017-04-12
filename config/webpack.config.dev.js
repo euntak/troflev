@@ -8,6 +8,7 @@ var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 var WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
 var getClientEnvironment = require('./env');
 var paths = require('./paths');
+var path = require('path');
 
 
 
@@ -46,6 +47,8 @@ module.exports = {
     // We ship a few polyfills by default:
     require.resolve('./polyfills'),
     // Finally, this is your app's code:
+    path.resolve('./src/styles/_all.scss'),
+    path.join(paths.appSrc, 'index'),
     paths.appIndexJs
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and

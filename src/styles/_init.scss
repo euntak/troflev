@@ -1,0 +1,16 @@
+body {
+    background-color: $oc-gray-1;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: $font-size;
+    color: $base-font-color;
+
+    .container {
+        width: 100vw;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
